@@ -1,0 +1,369 @@
+/*  start css reset */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	body {
+		background: #eaeaea;
+	}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+/*header*/
+ .header {
+ 	width: 100%;
+ 	height: 30px;
+ 	background: #fffefb;
+ 	padding-left: 26px;
+ 	padding-top: 22px;
+ }
+
+ .notification {
+ 	width: 100%;
+ 	min-height: 55px;
+ 	background: #00a1df;
+ 	margin-bottom: 16px;
+ }
+
+ .notification>p {
+ 	color: #fff9f7;
+ 	font-size: 20px;
+ 	display: flex;
+ 	justify-content: center;
+ 	padding: 16px;
+ 	margin-left: 95px;
+ 	margin-top: 2px;
+ }
+
+ .logo {
+ 	display: block;
+ 	width: 200px;
+ 	height: 40px;
+ 	background-image: url('../galery/glassdoor-logo.jpg');
+ 	background-repeat: no-repeat;
+ }
+
+/*content*/
+ .content {
+ 	width: 100%;
+ 	min-height: 100px;
+ 	background: #eaeaea;
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-wrap: wrap;
+ 	align-items: flex-start;
+ 	margin-bottom: 29px;
+ }
+
+/*option*/
+	 .option {
+	 	max-width: 675px;
+	 	min-height: 100px;
+	 	background: #ffffff;
+	 	border-radius: 2px;
+	 	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+	 	margin: 0 16px 0 40px;
+	 }
+	 .option>h1 {
+		font-size: 24px;
+		line-height: 32px;
+		margin: 14px 17px 15px 15px;
+	 }
+
+	 .option>p {
+	 	margin: 16px 17px 16px 15px;
+		padding: 0;
+		line-height: 22px;
+		color: #404040;
+		font-size: 15px;
+	 }
+
+/*form*/
+
+ .form {
+	margin: 16px;
+ }
+
+ .form-row-radio {
+ 	margin-right: 10px;
+ 	width: 200px;
+ }
+
+ .form-row-radio>p {
+ 	margin-top: 2px;
+ 	font-weight: bold;
+ 	font-size: 15px;
+ }
+
+ .radio {
+	display: flex;
+	flex-direction: column;
+ }
+
+ .radio-label {
+	padding-bottom: 12px;
+ }
+
+ .radio-label-input {
+	margin-right: 12px;
+ }
+
+ .form-row {
+	display: flex;
+	padding-bottom: 15px;
+ }
+
+ .form-button {
+	display: flex;
+	padding-bottom: 10px;
+	margin-bottom: 7px;
+ }
+
+ .employee {
+	width: 200px;
+ }
+
+ .employee>p {
+	font-size: 15px;
+	cursor: pointer;
+	line-height: 17px;
+	margin-top: 3px;
+	margin-right: 3px;
+ }
+
+ .button {
+ 	margin-right: 2px;
+ 	display: flex;
+ 	cursor: pointer;
+ }
+
+ .switch.active {
+	background-color: #1aa2dc;
+	color: #f7ffff;
+	width: 150px;
+	height: 35px;
+	display: inline-block;
+ }
+
+ .switch {
+	width: 151px;
+	height: 35px;
+	color: #28a0dc;
+	background-color: #fffffe;
+	border: 1px solid #c2c2c2;
+	cursor: pointer;
+ }
+
+ .button>label>input {
+    display: none;
+}
+
+.switch-text {
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+ .disable {
+ 	display: none;
+ }
+
+ .select-option {
+	display: flex;
+ }
+
+ .select-year {
+ 	width: 200px;
+ }
+
+ .select-year-option {
+ 	width: 300px;
+ 	height: 35px;
+ 	background-color: #f2f2f2;
+ 	border: 1px solid #c2c2c2;
+ 	border-radius: 1px;
+ 	margin-bottom: 17px;
+ 	padding-left: 7px;
+ 	-webkit-appearance: none;
+ 	cursor: pointer;
+ 	position: relative;
+ }
+
+ /*.select-year-option:after {
+ 	content: "";
+ 	width: 100px;
+ 	height: 100px;
+ 	background: black;
+ 	border-top: 5px solid #7e7d83;
+ 	border-right: 5px solid #7e7d83;
+ 	border-left: 5px solid #7e7d83;
+ 	position: absolute;
+ 	right: 10px;
+ 	top: 10px;
+ }*/
+
+ .select-year-option>option {
+ 	width: 300px;
+ 	height: 35px;
+ 	background-color: #ffffff;
+ 	font-size: 15px;
+ }
+
+ .name {
+	display: flex;
+	margin-bottom: 28px;
+ }
+
+ .name-text {
+	width: 200px;
+ }
+
+ .name-field>input {
+	width: 288px;
+	height: 30px;
+	border-radius: 2px;
+	padding-left: 10px;
+	border: 1px solid #c2c2c2;
+ }
+
+ .button-send {
+	display: flex;
+	justify-content: center;
+ }
+
+ .send {
+	width: 80px;
+	height: 35px;
+	background-color: #1861bf;
+	color: #ffffff;
+	margin-right: 170px;
+ }
+
+/*info*/
+ .info {
+ 	max-width: 300px;
+ 	min-height: 300px;
+ 	background: #ffffff;
+ 	border-radius: 2px;
+ 	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+ }
+
+ .info>h2 {
+ 	font-size: 20px;
+    line-height: 27px;
+    margin: 16px;
+ }
+
+ .quote {
+    line-height: 22px;
+    color: #404040;
+    font-size: 15px;
+    margin: 16px 16px 1px 16px;
+ }
+
+ .signature {
+    line-height: 22px;
+    color: #404040;
+    font-size: 15px;
+    margin: 0 16px 16px 16px;
+ }
+
+ .asked {
+ 	margin: 16px 16px 35px 33px;
+ 	display: block;
+ 	position: relative;
+ }
+
+ .asked:after {
+ 	content: "";
+ 	width: 1px;
+ 	border-top: 3px solid transparent;
+ 	border-left: 5px solid #1a60c0;
+ 	border-bottom: 3px solid transparent;
+ 	position: absolute;
+ 	top: 5px;
+ 	left: -16px;
+ }
+
+ .info>a {
+ 	text-decoration: none;
+ }
+
+ .copyright {
+ 	display: flex;
+ 	justify-content: center;
+ 	margin-bottom: 5px;
+ 	margin-left: 38px;
+ 	font-size: 15px;
+ }
+
+ .copyright>p {
+ 	color: #40403e;
+ }
+
+ .terms {
+ 	display: flex;
+ 	justify-content: center;
+ 	margin-left: 37px;
+ }
+
+ .use:before {
+ 	content: "";
+ 	position: absolute;
+ 	background-color: #c2c2c2;
+ 	width: 1px;
+ 	height: 18px;
+ 	top: -2px;
+ 	right: -9px;
+ }
+
+ .terms>a {
+ 	color: #40403e;
+ 	font-size: 15px;
+ 	position: relative;
+ }
+
+ .use {
+ 	margin-right: 16px;
+ 	position: relative;
+ }
